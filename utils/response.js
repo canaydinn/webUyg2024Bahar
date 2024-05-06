@@ -42,8 +42,8 @@ class Response{
     error500(res){
         return res.status(500).json({
             success:false,
-            data:this,
-            message:this.message??"Kayıt Mevcut"
+            data:null,
+            message:this.message??"Şifre Eşleşmedi"
         })
     }
 }
